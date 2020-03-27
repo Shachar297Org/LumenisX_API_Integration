@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TESTERS", "TESTERS", "{E08CDD9B-88C1-4A7F-B9B2-65D1F4F1A607}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientServerTesters", "ClientServerTesters", "{FDD7D2B0-B8EA-49FF-85D2-A85ADB464E99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWPF_Tester", "CODE\Testers\ClientServerTesters\ClientWPF_Tester\ClientWPF_Tester.csproj", "{B2455295-3A8C-4738-B878-FE987FEF16AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientNative_Tester", "CODE\Testers\ClientServerTesters\ClientNative_Tester\NativeWindows_API_Tester.vcxproj", "{64A1991A-68DE-4B80-BA91-13C17DEF5911}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LumXPlatformCommon", "LumXPlatformCommon", "{7D3C9374-2067-4606-B353-4A2C0B3BE236}"
+	ProjectSection(SolutionItems) = preProject
+		CODE\LumXPlatformCommon\LumXCommon\DeviceActivationPropertyEnum.cs = CODE\LumXPlatformCommon\LumXCommon\DeviceActivationPropertyEnum.cs
+		CODE\LumXPlatformCommon\LumXCommon\LumXCommands.cs = CODE\LumXPlatformCommon\LumXCommon\LumXCommands.cs
+		CODE\LumXPlatformCommon\LumXCommon\LumXErrorCode.cs = CODE\LumXPlatformCommon\LumXCommon\LumXErrorCode.cs
+		CODE\LumXPlatformCommon\LumXCommon\LumXHostType.cs = CODE\LumXPlatformCommon\LumXCommon\LumXHostType.cs
+		CODE\LumXPlatformCommon\LumXCommon\LumXPlatformCommon.h = CODE\LumXPlatformCommon\LumXCommon\LumXPlatformCommon.h
+		CODE\LumXPlatformCommon\LumXCommon\LumXPlatformState.cs = CODE\LumXPlatformCommon\LumXCommon\LumXPlatformState.cs
+		CODE\LumXPlatformCommon\LumXCommon\LumXStateUpdateSeverity.cs = CODE\LumXPlatformCommon\LumXCommon\LumXStateUpdateSeverity.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIProvider", "APIProvider", "{A12B748E-4C14-46AB-AA9A-D25B81246E81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LumX_Native_API_Wrapper", "LumX_Native_API_Wrapper", "{8AC5C8E9-4B21-4113-BF8B-68646E3EB477}"
+	ProjectSection(SolutionItems) = preProject
+		CODE\APIProvider\LumX_Native_API_Wrapper\LumX_API_Native_Wrapper.h = CODE\APIProvider\LumX_Native_API_Wrapper\LumX_API_Native_Wrapper.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LumX_CPP_CLI_API_Wrapper", "LumX_CPP_CLI_API_Wrapper", "{AAFF6CDD-978C-48E3-A146-BF3776EAE239}"
+	ProjectSection(SolutionItems) = preProject
+		CODE\APIProvider\LumX_CPP_CLI_API_Wrapper\LumX_API_Native_CLI_Wrapper.h = CODE\APIProvider\LumX_CPP_CLI_API_Wrapper\LumX_API_Native_CLI_Wrapper.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConfigurationFiles", "ConfigurationFiles", "{9F5263E4-CB31-4093-8771-59E6398E13EA}"
+	ProjectSection(SolutionItems) = preProject
+		_BINs\Build\x64\Debug\ConfigurationSettings.Client.config = _BINs\Build\x64\Debug\ConfigurationSettings.Client.config
+		_BINs\Build\x64\Debug\ConfigurationSettings.Server.config = _BINs\Build\x64\Debug\ConfigurationSettings.Server.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2455295-3A8C-4738-B878-FE987FEF16AC}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{B2455295-3A8C-4738-B878-FE987FEF16AC}.Debug|x64.ActiveCfg = Debug|x64
+		{B2455295-3A8C-4738-B878-FE987FEF16AC}.Debug|x64.Build.0 = Debug|x64
+		{B2455295-3A8C-4738-B878-FE987FEF16AC}.Debug|x86.ActiveCfg = Debug|x64
+		{B2455295-3A8C-4738-B878-FE987FEF16AC}.Release|Any CPU.ActiveCfg = Release|x64
+		{B2455295-3A8C-4738-B878-FE987FEF16AC}.Release|x64.ActiveCfg = Release|x64
+		{B2455295-3A8C-4738-B878-FE987FEF16AC}.Release|x64.Build.0 = Release|x64
+		{B2455295-3A8C-4738-B878-FE987FEF16AC}.Release|x86.ActiveCfg = Release|x64
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911}.Debug|x64.ActiveCfg = Debug|x64
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911}.Debug|x64.Build.0 = Debug|x64
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911}.Debug|x86.ActiveCfg = Debug|Win32
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911}.Debug|x86.Build.0 = Debug|Win32
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911}.Release|Any CPU.ActiveCfg = Release|Win32
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911}.Release|x64.ActiveCfg = Release|x64
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911}.Release|x64.Build.0 = Release|x64
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911}.Release|x86.ActiveCfg = Release|Win32
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDD7D2B0-B8EA-49FF-85D2-A85ADB464E99} = {E08CDD9B-88C1-4A7F-B9B2-65D1F4F1A607}
+		{B2455295-3A8C-4738-B878-FE987FEF16AC} = {FDD7D2B0-B8EA-49FF-85D2-A85ADB464E99}
+		{64A1991A-68DE-4B80-BA91-13C17DEF5911} = {FDD7D2B0-B8EA-49FF-85D2-A85ADB464E99}
+		{8AC5C8E9-4B21-4113-BF8B-68646E3EB477} = {A12B748E-4C14-46AB-AA9A-D25B81246E81}
+		{AAFF6CDD-978C-48E3-A146-BF3776EAE239} = {A12B748E-4C14-46AB-AA9A-D25B81246E81}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89C55021-518A-4BC1-B42B-7A72ECC95FC7}
+	EndGlobalSection
+EndGlobal

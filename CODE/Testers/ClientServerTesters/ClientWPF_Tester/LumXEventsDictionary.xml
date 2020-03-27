@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LumXEventsDictionary LumXEventsDictionaryVersion="1.1" LumXEventsSchemaVersion="1.1">
+  <parameterKey name="SystemState" type="int" QoS="QoS1" />
+  <parameterKey name="SystemVersion" type="string" />
+  <parameterKey name="GA" type="string" />
+  <parameterKey name="SN" type="string" />
+  <parameterKey name="Duration" type="int" QoS="QoS1" />
+  <parameterKey name="Yesterday" type="datetime" />
+  <parameterKey name="Calibration" type="group" QoS="QoS1">
+    <parameterKey name="Energy" type="int" />
+    <parameterKey name="Voltage" type="double" />
+    <parameterKey name="Temperature" type="int" />
+  </parameterKey>
+  <parameterKey name="PropertySelection" type="group">
+    <parameterKey name="PPS" type="int" />
+    <parameterKey name="SpotSize" type="double" />
+    <parameterKey name="Fluence" type="int" />
+    <parameterKey name="HP" type="int" />
+  </parameterKey>
+  <parameterKey name="SWVersion" type="string" />
+  <parameterKey name="NoiseLevel" type="double" />
+  <parameterKey name="Power" type="int" />
+  <parameterKey name="Error" type="int" />
+  <parameterKey name="TreatmentType" type="string" />
+  <parameterKey name="StartSystem" type="int" />
+</LumXEventsDictionary>

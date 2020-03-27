@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="LumXCommands">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="LumXCommand">
+          <xs:complexType>
+            <xs:sequence minOccurs="0" maxOccurs="1">
+              <xs:element name="Params">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Param">
+                      <xs:complexType>
+                        <xs:attribute name="paramName" type="xs:string" use="required"/>
+                        <xs:attribute name="paramType" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:pattern value="bool|byte|sbyte|char|datetime|decimal|double|float|int|uint|long|ulong|object|short|ushort|string"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="isList" type="xs:string" use="optional" fixed="True"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="commandName" type="xs:string" use="required"/>
+            <xs:attribute name="commandSource" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="Application|LumXClient|LumXServer|Cloud"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="commandTarget" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="Application|LumXClient|LumXServer|Cloud"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LumXCommandsDictionaryVersion" type="xs:string" use="required"/>
+      <xs:attribute name="LumXCommandsSchemaVersion" type="xs:string" use="required" fixed="1.1"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
