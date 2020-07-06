@@ -1,3 +1,0 @@
-﻿  NativeWindows_API_Tester.cpp
-C:\Repos\VS\_SYNC\DevAzure\LumenisX_API_Integration\CODE\Testers\ClientServerTesters\ClientNative_Tester\NativeWindows_API_Tester.cpp(372,82): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  NativeWindows_API_Tester.vcxproj -> C:\Repos\VS\_SYNC\DevAzure\LumenisX_API_Integration\_BINS\Build\x64\Debug\ClientNative_Tester.exe
